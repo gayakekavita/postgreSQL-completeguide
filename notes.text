@@ -1,0 +1,16 @@
+***********Database design process::**************
+ 1. Understand what kind of data we are storing?
+    Ex: storing the data of students. i.e 'students'(Table).
+ 2. Understand or find out the attributes or properties of it?
+   Example:: properties of student data are 
+            2.1 name
+            2.2 address
+            2.3 roll no 
+            2.4 marks
+ 3. Understand the data type of each and every property of the data?
+   Example: 
+            3.1 name = datatype is string
+            3.2 address =datatype is string
+            3.3 roll no  = datatype is integer
+            3.4 marks= datatype is float
+  
