@@ -4,3 +4,9 @@ CREATE TABLE students(
 	roll_no INTEGER, 
 	marks FLOAT
 );
+/*
+   - CREATE TABLE are the keywords used to create the table
+   - students is the name of the table
+   - name,address, roll_no and marks are the properties or columns of students table
+
+*/
