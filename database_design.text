@@ -1,0 +1,24 @@
+How we are designing the database for any application ? 
+ -Firstly understand its main modules and its sub-modules.
+ -identify common features used in the app.
+ let's take an example:
+    Restaurant Managemet System::-
+         1. For this we create a database called as 'restaurant_db'.
+         2. Now create tables inside the 'restaurant_db' database.
+         3. Create a table 'user' for user's login & user's profile.
+         4. Create a table 'admin' for admin(Restaurant login) login & admin profile.
+         5. Create table 'query' for queries of the users.
+         6. Create table 'feedback' for users feedback.
+         7. Create table 'item' for food-item categories.
+         8. Create table 'orders' for tracking the orders of users.
+         9.Create table 'add-cart'  .
+
+
+  It is just an example that's how we design a database for any application .
+  By understanding step by step things that our application include.
+  Common Features in most of the apps are:
+       1.login
+       2.query
+       3.feedback
+         
+      
