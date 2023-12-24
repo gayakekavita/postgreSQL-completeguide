@@ -1,0 +1,40 @@
+Databse relations consists of following relations:
+1.One-to-many
+2.Many-to-one
+3.One-to-one
+4.Many-to-many
+
+1.One-to-many:---
+   --One entity realates to multiple entities in One-to-many relation in the database.
+   -- It is used to create a relationship between two tables. Any single rows of the first table can be related to one or more rows of the second tables, but the rows of second tables can only relate to the only row in the first table. It is also known as a many to one relationship.
+ -In instagram, facebook or any social media account ,a  user has many photos.
+ -In instagram, facebook or any social media account,a photo has many comments.
+ -School has many  students.
+ -Company has many employees.
+ -A job has many applicants.
+
+
+2. Many-to-one:---
+   -- Many entities realates to single entity  in Many-to-one  relation in the database.
+-In instagram, facebook or any social media account,Photos has one user.
+-In instagram, facebook or any social media account,multiple comments belongs to one single photo.
+-Many students belongs to the one school.
+-Many Employees belongs to one company.
+-Many applicants apply for single job position.
+
+3.One-to-one:---
+  --single entity realates to single entity  in One-to-one  relation in the database.
+  --It is used to create a relationship between two tables in which a single row of the first table can only be related to one and only one records of a second table. Similarly, the row of a second table can also be related to anyone row of the first table.
+-School has one principal
+-Subject has one code.
+-Each country has one capital
+
+
+4.Many-to-many:---
+  --Many entities realates to many entities  in Many-to-many relation in the database.
+  --It is many to many relationships that create a relationship between two tables. Each record of the first table can relate to any records (or no records) in the second table. Similarly, each record of the second table can also relate to more than one record of the first table. It is also represented an N:N relationship
+-Teachers teach to multiple student.
+- a reader can read many newspapers, and a newspaper can have many readers.
+
+
+
