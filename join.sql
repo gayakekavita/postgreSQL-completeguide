@@ -66,3 +66,57 @@ VALUES ('it is nice',3,2)
 		,('jbfv jvjf bj vj',3,5);
 
 SELECT *FROM comments;
+
+select comment, username from comments JOIN users ON users.id=comments.user_id;
+
+select comment, url from comments JOIN photos ON photos.id=comments.photo_id;
+
+Alternate forms of syntax:
+   select comment, username from users JOIN comments ON users.id=comments.user_id;
+   select comment, url from photos JOIN comments ON photos.id=comments.photo_id;
+
+AS keyword::
+   select comments.id AS comments_id , photos.id AS photos_id from photos JOIN comments ON photos.id=comments.photo_id;
+   select comments.id AS comments_id , p.id AS photos_id from photos AS p JOIN comments ON p.id=comments.photo_id;
+
+select comments.id AS comments_id , p.id AS photos_id from photos AS p JOIN comments ON p.id=comments.photo_id;
+
+
+INSERT INTO  photos (url,user_id)
+VALUES ('it is very nice',NULL);
+
+select url,username FROM photos JOIN users ON users.id=photos.user_id;
+
+does not include the comment which user_id is null.
+
+four types of join:
+1.inner join
+2.left join
+3.right join
+4.full join
+
+1.inner join(default join)
+  select comment, username from comments JOIN users ON users.id=comments.user_id;
+
+select comment, url from comments JOIN photos ON photos.id=comments.photo_id;
+2.left join
+select url,username FROM photos LEFT JOIN users ON users.id=photos.user_id;
+
+3.Right join:
+select url,username FROM photos RIGHT JOIN users ON users.id=photos.user_id;
+
+4.full join:
+select url,username FROM photos FULL JOIN users ON users.id=photos.user_id;
+
+
+
+DOES ORDER MATTER??
+select url,username FROM photos LEFT JOIN users ON users.id=photos.user_id;
+
+select url,username FROM users LEFT JOIN photos ON users.id=photos.user_id;
+
+these two queries give different results.
+
+
+
+
